@@ -3,13 +3,19 @@
 
 
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 function MainLayoutes() {
   return (
     <div>
 
-        <h2>Working</h2>
-        
+        <header>
+            <Navbar/>
+        </header>
+        <main>
+            
+        </main>
+
     </div>
   )
 }
