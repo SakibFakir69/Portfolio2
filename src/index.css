@@ -6,16 +6,16 @@
 }
 
 .box {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   background-color: rgba(138, 43, 226, 0.8);
   filter: blur(200px);
 
-  border: 2px solid red;
-  animation: anime 3s ease-in-out infinite ;
+
+  animation: anime 3s ease-in-out infinite;
   animation-duration: 5s;
   animation-delay: 4s;
-
+  position: absolute;
 }
 /* translate work x and y */
 
@@ -25,18 +25,18 @@
   }
   25% {
     transform: translate(100px);
-
-   
   }
   50% {
     transform: translate(250px);
     background-color: rgb(17, 86, 223);
-    
-    filter: blur(150px);
+
+    filter: blur(170px);
     filter: brightness("100");
   }
   100% {
-    transform: translate(450px);
+    transform: translate(550px);
+   
   }
- 
 }
+
+
