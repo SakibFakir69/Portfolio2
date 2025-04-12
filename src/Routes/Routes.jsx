@@ -8,7 +8,7 @@ import Home from "../components/Home/Home";
 export  const route =createBrowserRouter([
 
     {
-        path:'/',
+        path:'',
         element:<MainLayoutes/>,
         children:[
             {
