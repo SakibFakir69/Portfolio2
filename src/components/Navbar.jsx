@@ -18,10 +18,10 @@ function Navbar() {
 
     const links= <>
     <li>
-        <Link>Home</Link>
+        <Link to={'/'}>Home</Link>
     </li>
     <li>
-        <Link>Skill</Link>
+        <Link to={'/skill'}>Skill</Link>
     </li>
     <li>
         <Link>Education</Link>
@@ -51,8 +51,9 @@ function Navbar() {
   return (
     <div>
       <div className="navbar fixed z-50
-      bg-transparent backdrop-blur-3xl  border border-stone-900 shadow-xl ">
-        <div className="navbar-start">
+      bg-transparent backdrop-blur-3xl  border border-stone-900 shadow-xl  ">
+
+        <div className="navbar-start bg-[#1e1e1e]">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -78,7 +79,7 @@ function Navbar() {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-white">Sakib Fakir</a>
+          {/* <a className="btn  text-xl text-white">Sakib Fakir</a> */}
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-white">
