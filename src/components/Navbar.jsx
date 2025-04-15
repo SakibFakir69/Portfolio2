@@ -24,7 +24,7 @@ function Navbar() {
         <Link to={'/skill'}>Skill</Link>
     </li>
     <li>
-        <Link>Education</Link>
+        <Link to={'/education'}>Education</Link>
     </li>
     <li>
         <Link>Expreience</Link>

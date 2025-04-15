@@ -3,6 +3,7 @@ import { MagicCard } from "../magicui/magic-card";
 import { FcAcceptDatabase } from "react-icons/fc";
 import { GrCode } from "react-icons/gr";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
+import { VscTools } from "react-icons/vsc";
 function Skill() {
   // langauge ,
   // front-end backend
@@ -17,12 +18,13 @@ function Skill() {
       icon:<LiaLaptopCodeSolid className="text-yellow-300"/>
     },
     { title: "Backend Development", skill: ["Express", "MongoDB", "NodeJs"],icon:<FcAcceptDatabase/> },
+    {title:"Tools",skill:['Vs Code',"socket.io","Firebase","figma"],icon:<VscTools className="text-red-400"/>}
   ];
 
   return (
     <div className="py-20 ">
 
-      <section className="lg:py-48 md:py-28 py-20 grid lg:grid-cols-3 md:grid-cols-2 gap-10 p-4 ">
+      <section className="lg:py-48 md:py-28 py-20 grid lg:grid-cols-3 md:grid-cols-2 gap-10 p-6 mx-auto">
         {Skills.map((item, key) => (
           <div
             key={key}
@@ -74,9 +76,10 @@ bg-teal-400/20
             <div className="flex gap-2 mt-4 p-2 justify-left items-center">
               {item?.skill.map((item) => (
                 <p
+                key={key}
                   className="border p-2 border-none bg-teal-700/20 rounded
              
-             hover:bg-teal-200/10"
+             hover:bg-teal-200/10 "
                 >
                   {item}
                 </p>
