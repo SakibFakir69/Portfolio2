@@ -52,7 +52,7 @@ function Education() {
                 <p className="w-4 h-4 bg-blue-400 rounded-full"></p>
               </div>
 
-              <h2 className="text-green-400 text-xl font-semibold">
+              <h2 className="text-green-400 text-xl font-semibold mt-2">
                 FEATURED EDUCATION
               </h2>
 

@@ -75,6 +75,7 @@ bg-teal-400/20
 
             <div className="flex gap-2 mt-4 p-2 justify-left items-center">
               {item?.skill.map((item) => (
+                // width set kora dita hobba problem porla
                 <p
                 key={key}
                   className="border p-2 border-none bg-teal-700/20 rounded
