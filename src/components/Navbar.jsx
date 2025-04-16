@@ -33,7 +33,7 @@ function Navbar() {
         <Link>Project</Link>
     </li>
     <li>
-        <Link>Contacs</Link>
+        <Link to={'/contacts'}>Contacts</Link>
     </li>
 
 
@@ -53,7 +53,7 @@ function Navbar() {
       <div className="navbar fixed z-50
       bg-transparent backdrop-blur-3xl  border border-stone-900 shadow-xl  ">
 
-        <div className="navbar-start bg-[#1e1e1e]">
+        <div className="navbar-start bg-[#1e1e1e] p-4">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg

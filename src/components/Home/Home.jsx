@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../../pages/HeroSection";
 import Skill from "../Skills/Skill";
 import Education from "../Education/Education";
+import Contacts from "../Contacts/Contacts";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <HeroSection />
       <Skill/>
       <Education/>
+      <Contacts/>
      
     </div>
   );
