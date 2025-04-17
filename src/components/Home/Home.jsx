@@ -3,6 +3,7 @@ import HeroSection from "../../pages/HeroSection";
 import Skill from "../Skills/Skill";
 import Education from "../Education/Education";
 import Contacts from "../Contacts/Contacts";
+import Project from "../project/project";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
 
       <HeroSection />
       <Skill/>
+      <Project/>
       <Education/>
       <Contacts/>
      

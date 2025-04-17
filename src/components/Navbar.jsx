@@ -30,7 +30,7 @@ function Navbar() {
         <Link>Expreience</Link>
     </li>
     <li>
-        <Link>Project</Link>
+        <Link to={'/project'}>Project</Link>
     </li>
     <li>
         <Link to={'/contacts'}>Contacts</Link>

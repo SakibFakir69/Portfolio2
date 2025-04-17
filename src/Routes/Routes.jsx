@@ -4,6 +4,7 @@ import Home from "../components/Home/Home";
 import Skill from "@/components/Skills/Skill";
 import Education from "@/components/Education/Education";
 import Contacts from "@/components/Contacts/Contacts";
+import Project from "@/components/project/project";
 
 
 
@@ -29,6 +30,10 @@ export  const route =createBrowserRouter([
             {
                 path:'/contacts',
                 element: <Contacts/>
+            },
+            {
+                path:'/project',
+                element: <Project/>
             }
 
         ]
