@@ -4,10 +4,10 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { motion } from "motion/react";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
-
+import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 function HeroSection() {
   return (
-    <div className="text-white    relative overflow-hidden min-h-screen">
+    <div className="text-white  -mt-4    relative overflow-hidden min-h-screen">
 
       <div className="box w-full"></div>
 
@@ -19,7 +19,19 @@ function HeroSection() {
 
           <BoxReveal duration={0.5}>
             <div>
-              <span>Welcom to my universe</span>
+            <motion.span
+             animate={{
+              color: ["#00ff00", "#0000ff", "#ffff00"],
+            }}
+            transition={{
+              duration: 5,
+              delay: 2,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+
+            
+            className="text-white">✨ Welcome to my universe</motion.span>
             </div>
           </BoxReveal>
 
