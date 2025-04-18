@@ -7,8 +7,9 @@ import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 function HeroSection() {
   return (
-    <div className="text-white  border border-white mt-6 relative overflow-hidden">
-      <div className="box "></div>
+    <div className="text-white    relative overflow-hidden min-h-screen">
+
+      <div className="box w-full"></div>
 
       <section className=" md:flex w-full">
         {/* box */}

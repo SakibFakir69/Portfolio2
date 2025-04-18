@@ -30,7 +30,7 @@ function Project() {
   ];
 
   return (
-    <div className="py-24">
+    <div className="py-24 w-full">
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 p-6">
         {projects.map((item, key) => (
           <div
@@ -50,11 +50,11 @@ function Project() {
 
             {/* features */}
             <div>
-              <h2>Features</h2>
+              <h2 className="text-green-400 font-semibold">Features</h2>
               <div className="">
                 {item.features?.map((item, key) => (
                   <div key={key}>
-                    <p className="border rounded m-1 px-1 border-white/20">
+                    <p className="border rounded m-1 px-1 border-white/20 hover:bg-teal-400/20">
                       {key + 1} {item}
                     </p>
                   </div>
@@ -65,10 +65,10 @@ function Project() {
             {/*  front_end*/}
 
             <div>
-              <h2>Front-End</h2>
-              <div className="flex">
+              <h2 className="font-semibold text-violet-400">Front-End</h2>
+              <div className="flex gap-4">
                 {item.front_end.map((front, key) => (
-                  <p key={key} className="border p-1 rounded">
+                  <p key={key} className="border p-1 rounded hover:bg-teal-400/20">
                     {front}
                   </p>
                 ))}
@@ -78,10 +78,10 @@ function Project() {
             {/* backend */}
 
             <div>
-              <h2>Back-End</h2>
+              <h2 className="font-semibold text-red-400">Back-End</h2>
               <div className="flex gap-4">
                 {item.backend.map((backend, key) => (
-                  <p key={key} className="border p-1 rounded">
+                  <p key={key} className="border p-1 rounded hover:bg-teal-400/20">
                     {backend}
                   </p>
                 ))}

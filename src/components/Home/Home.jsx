@@ -7,7 +7,9 @@ import Project from "../project/project";
 
 function Home() {
   return (
-    <div className="border border-white py-20 px-6  ">
+    <div className=" py-20 px-6  ">
+
+  
 
       <HeroSection />
       <Skill/>
