@@ -7,7 +7,7 @@ import Project from "../project/project";
 
 function Home() {
   return (
-    <div className=" py-20 px-6  ">
+    <div className=" py-20  ">
 
   
 

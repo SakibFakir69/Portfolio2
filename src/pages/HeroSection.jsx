@@ -5,9 +5,23 @@ import Typewriter from "typewriter-effect";
 import { motion } from "motion/react";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
+import animationData from '../../public/Animation - 1745166415330.json'
+import Lottie from "react-lottie";
 function HeroSection() {
+
+
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+   
+  };
+
+
+
   return (
-    <div className="text-white  -mt-4    relative overflow-hidden min-h-screen">
+    <div className="text-white   relative overflow-hidden min-h-screen p-6">
 
       <div className="box w-full"></div>
 
@@ -19,6 +33,9 @@ function HeroSection() {
 
           <BoxReveal duration={0.5}>
             <div>
+        
+
+
             <motion.span
              animate={{
               color: ["#00ff00", "#0000ff", "#ffff00"],
@@ -31,8 +48,10 @@ function HeroSection() {
             }}
 
             
-            className="text-white">✨ Welcome to my universe</motion.span>
+            className="text-white">✨  Welcome to my universe</motion.span>
+           
             </div>
+
           </BoxReveal>
 
           {/* info  */}
@@ -107,10 +126,15 @@ function HeroSection() {
 
         </div>
 
-        <div className="w-full flex flex-1">
+        <div className="w-full flex flex-1 justify-center">
           <div className=" ">
             {/* image */}
-            <div className="h-96   w-full">image</div>
+            <div className="h-96   w-full">
+              <Lottie options={defaultOptions}
+              />
+
+
+            </div>
           </div>
         </div>
       </section>

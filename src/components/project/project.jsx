@@ -1,4 +1,5 @@
 import React from "react";
+import ai from "../../../public/Screenshot 2025-04-25 234215.png";
 
 function Project() {
   const projects = [
@@ -20,6 +21,21 @@ function Project() {
     },
 
     {
+      name: "Customer Support AI",
+      title: "Bkash Customer Support AI",
+      description:
+        "A smart AI support system for bKash that chats naturally in Bangla and English, making customer service faster, easier, and more reliable",
+      features: [
+        "24/7 Availability",
+        "Bilingual Support (Bangla & English)",
+        "Real-time, Fast Responses:",
+      ],
+      front_end: ["JavaScript", "React", "Tailwind CSS", "Lottie-react"],
+      backend: ["Firebase", "ExpressJS", "MongoDB"],
+      img: ai,
+    },
+
+    {
       name: "ConnectToYou",
       title: "A Short News & Social Platform",
       description:
@@ -31,7 +47,7 @@ function Project() {
 
   return (
     <div className="py-24 w-full">
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 p-6">
+      <section className="grid md:grid-cols-2 lg:grid-cols-2 gap-3 p-6">
         {projects.map((item, key) => (
           <div
             key={key}
@@ -40,12 +56,15 @@ function Project() {
                     bg-teal-400/20
                rounded hover:bg-teal-500/30 flex flex-col gap-4 p-4"
           >
+            <div className="md:h-60 lg:h-64 w-[99%] flex justify-center mx-auto  border border-teal-400/10 rounded">
 
-            <div className="h-60 w-[99%] flex justify-center mx-auto  border">
-
+              <img src={item.img} alt={item.img}/>
             </div>
-            <h2 className="md:text-3xl text-2xl font-bold">{item.name}</h2>
-            <h3 className="md:text-text-3xl text-xl font-semibold">{item.title}</h3>
+
+            <h2 className="md:text-3xl text-2xl font-bold text-green-400">{item.name}</h2>
+            <h3 className="md:text-text-3xl text-xl font-semibold text-emerald-400">
+              {item.title}
+            </h3>
             <p className="text-stone-200 ">{item.description}</p>
 
             {/* features */}
@@ -68,7 +87,10 @@ function Project() {
               <h2 className="font-semibold text-violet-400">Front-End</h2>
               <div className="flex gap-4">
                 {item.front_end.map((front, key) => (
-                  <p key={key} className="border p-1 rounded hover:bg-teal-400/20">
+                  <p
+                    key={key}
+                    className="border p-1 rounded hover:bg-teal-400/20 border-teal-300/20"
+                  >
                     {front}
                   </p>
                 ))}
@@ -81,7 +103,10 @@ function Project() {
               <h2 className="font-semibold text-red-400">Back-End</h2>
               <div className="flex gap-4">
                 {item.backend.map((backend, key) => (
-                  <p key={key} className="border p-1 rounded hover:bg-teal-400/20">
+                  <p
+                    key={key}
+                    className="border p-1 rounded hover:bg-teal-400/20 border-teal-200/10 text-green-300 "
+                  >
                     {backend}
                   </p>
                 ))}

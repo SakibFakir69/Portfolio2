@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Links } from "react-router-dom";
+import { MdMenu } from "react-icons/md";
 
 function Navbar() {
 
@@ -54,21 +55,23 @@ function Navbar() {
       bg-transparent backdrop-blur-3xl  border border-stone-900 shadow-xl -1 ">
 
         <div className="navbar-start  p-4">
-          <div className="dropdown">
+          <div className="dropdown ">
 
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+
+            <MdMenu tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
              
 
-            </div>
+            </MdMenu>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-white font-semibold"
+              className="menu menu-sm dropdown-content  border border-teal-300/20 rounded-box z-1 mt-3 w-52 p-2 shadow text-white font-semibold bg-teal-600  "
             >
               {links}
             </ul>
           </div>
           {/* <a className="btn  text-xl text-white">Sakib Fakir</a> */}
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-white">
             {links}
