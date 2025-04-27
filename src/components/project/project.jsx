@@ -1,7 +1,10 @@
 import React from "react";
 import ai from "../../../public/Screenshot 2025-04-25 234215.png";
 
+import { Helmet } from "react-helmet";
+
 function Project() {
+
   const projects = [
     {
       name: "NextCall",
@@ -47,6 +50,10 @@ function Project() {
 
   return (
     <div className="py-24 w-full">
+
+      <Helmet>
+        <title>Project</title>
+      </Helmet>
       <section className="grid md:grid-cols-2 lg:grid-cols-2 gap-3 p-6">
         {projects.map((item, key) => (
           <div
