@@ -4,6 +4,7 @@ import { FcAcceptDatabase } from "react-icons/fc";
 import { GrCode } from "react-icons/gr";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { VscTools } from "react-icons/vsc";
+import { Helmet } from "react-helmet";
 function Skill() {
   // langauge ,
   // front-end backend
@@ -35,6 +36,9 @@ function Skill() {
 
   return (
     <div className="py-20 w-full ">
+      <Helmet>
+        <title>Skill</title>
+      </Helmet>
       <div className="h-44 w-24 border bg-violet-600  rounded-full flex justify-between mx-auto transform left-1/2 right-1/2 filter blur-[100px] opacity-70 fixed "></div>
       <section className="lg:py-48 md:py-28 py-20 grid lg:grid-cols-3 md:grid-cols-2 gap-10 p-6 mx-auto z-50">
         {Skills.map((item, key) => (

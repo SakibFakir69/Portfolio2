@@ -1,14 +1,11 @@
 import React from "react";
 
-
 import { Send, Phone, MapPin, Mail } from "lucide-react";
 
 import { toast, ToastContainer } from "react-toastify";
 import { SiLinkedin } from "react-icons/si";
 import { BsFacebook } from "react-icons/bs";
 import { Helmet } from "react-helmet";
-
-
 
 function Contacts() {
   const onSubmitEmail = async (event) => {
@@ -53,11 +50,9 @@ function Contacts() {
 
   return (
     <div className="py-24">
+     
       <main className="pt-20   lg:pt-[0rem] min-h-screen   text-white">
         <ToastContainer />
-        <Helmet>
-          <title>Contact</title>
-        </Helmet>
 
         <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
           <div className="container mx-auto">

@@ -52,9 +52,9 @@ function Navbar() {
   return (
     <div>
       <div className="navbar fixed z-50
-      bg-transparent backdrop-blur-3xl  border border-stone-900 shadow-xl -1 ">
+      bg-transparent backdrop-blur-3xl  border border-teal-900/30 shadow-xl -1 ">
 
-        <div className="navbar-start  p-4">
+        <div className="navbar-start  p-2">
           <div className="dropdown ">
 
 
@@ -79,7 +79,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn px-10 py-3 bg-violet-500 hover:shadow-blue-300 shadow-2xl hover:bg-violet-700">Resume</a>
+          <a className="btn border-none px-10 py-3 bg-violet-500 hover:shadow-blue-300 shadow-2xl hover:bg-violet-700">Resume</a>
         </div>
       </div>
     </div>

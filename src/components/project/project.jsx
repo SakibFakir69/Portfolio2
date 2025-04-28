@@ -3,7 +3,13 @@ import ai from "../../../public/Screenshot 2025-04-25 234215.png";
 
 import { Helmet } from "react-helmet";
 
+
+import img2 from  "../../../public/Screenshot 2025-04-28 185131.png"
+import img3 from '../../../public/Screenshot 2025-04-28 185904.png'
+
 function Project() {
+
+  // github live 
 
   const projects = [
     {
@@ -21,6 +27,7 @@ function Project() {
       backend: ["Express", "Node.Js", "MongoDB"],
       chat: ["Socket.io"],
       video: ["WebSocket", "100ms", "agora"],
+      img:img3,
     },
 
     {
@@ -45,7 +52,30 @@ function Project() {
         "ConnectToYou is an innovative short-form social media platform designed for quick news updates and social engagement.",
       front_end: ["React,", " Tailwind CSS", "Framer-Motion"],
       backend: ["Express", "Node.Js", "MongoDB"],
+      features: [
+        "Short News Updates – Get the latest headlines in a bite-sized format",
+
+        " Category-Based News",
+        "Social Interaction",
+      ],
     },
+
+    {
+      name:"Artifacts Tracker",
+      title:"Artifacts Tracker",
+      description:"A web application for adding, managing, and viewing artifacts. Users can track their collections with detailed information.",
+      front_end: ["React,", " Tailwind CSS", "Framer-Motion"],
+      backend: ["Express", "Node.Js", "MongoDB"],
+      img:img2,
+      features: [
+        "Add new artifacts",
+        "View and manage your artifacts",
+        "Easy-to-use interface for organizing collections",
+      ],
+
+
+
+    }
   ];
 
   return (
@@ -54,6 +84,7 @@ function Project() {
       <Helmet>
         <title>Project</title>
       </Helmet>
+      
       <section className="grid md:grid-cols-2 lg:grid-cols-2 gap-3 p-6">
         {projects.map((item, key) => (
           <div

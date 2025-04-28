@@ -7,6 +7,7 @@ import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import animationData from '../../public/Animation - 1745166415330.json'
 import Lottie from "react-lottie";
+import { Helmet } from "react-helmet";
 function HeroSection() {
 
 
@@ -22,6 +23,9 @@ function HeroSection() {
 
   return (
     <div className="text-white   relative overflow-hidden min-h-screen p-6">
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
 
       <div className="box w-full"></div>
 
