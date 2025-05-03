@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Links } from "react-router-dom";
+import { Link, Links, NavLink } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
 
 function Navbar() {
@@ -19,22 +19,22 @@ function Navbar() {
 
     const links= <>
     <li>
-        <Link to={'/'}>Home</Link>
+        <NavLink to={'/'}>Home</NavLink>
     </li>
     <li>
-        <Link to={'/skill'}>Skill</Link>
+        <NavLink to={'/skill'}>Skill</NavLink>
     </li>
     <li>
-        <Link to={'/education'}>Education</Link>
+        <NavLink  to={'/education'}>Education</NavLink>
     </li>
     <li>
-        <Link>Expreience</Link>
+        <NavLink to={'/expreience'}>Expreience</NavLink>
     </li>
     <li>
-        <Link to={'/project'}>Project</Link>
+        <NavLink to={'/project'}>Project</NavLink>
     </li>
     <li>
-        <Link to={'/contacts'}>Contacts</Link>
+        <NavLink to={'/contacts'}>Contacts</NavLink>
     </li>
 
 

@@ -5,6 +5,7 @@ import Skill from "@/components/Skills/Skill";
 import Education from "@/components/Education/Education";
 import Contacts from "@/components/Contacts/Contacts";
 import Project from "@/components/project/project";
+import Expreience from "@/components/Expreience/Expreience";
 
 
 
@@ -34,6 +35,10 @@ export  const route =createBrowserRouter([
             {
                 path:'/project',
                 element: <Project/>
+            },
+            {
+                path:'/expreience',
+                element:<Expreience/>
             }
 
         ]

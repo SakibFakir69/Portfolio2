@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet";
 
 import img2 from  "../../../public/Screenshot 2025-04-28 185131.png"
 import img3 from '../../../public/Screenshot 2025-04-28 185904.png'
+import img4 from '../../../public/Screenshot 2025-05-03 225013.png'
+import img5 from '../../../public/Screenshot 2025-05-03 235414.png'
 
 function Project() {
 
@@ -28,6 +30,7 @@ function Project() {
       chat: ["Socket.io"],
       video: ["WebSocket", "100ms", "agora"],
       img:img3,
+      github:['https://github.com/NexCall-A-Video-Calling-App/NexCall']
     },
 
     {
@@ -43,6 +46,7 @@ function Project() {
       front_end: ["JavaScript", "React", "Tailwind CSS", "Lottie-react"],
       backend: ["Firebase", "ExpressJS", "MongoDB"],
       img: ai,
+      github:['https://github.com/SakibFakir69/CustomerSupportAi']
     },
 
     {
@@ -50,15 +54,37 @@ function Project() {
       title: "A Short News & Social Platform",
       description:
         "ConnectToYou is an innovative short-form social media platform designed for quick news updates and social engagement.",
-      front_end: ["React,", " Tailwind CSS", "Framer-Motion"],
-      backend: ["Express", "Node.Js", "MongoDB"],
+      front_end: ["React,", " Tailwind CSS", "Framer-Motion","Javascript"],
+      backend: ["Express", "Node.Js", "MongoDB","Firebase"],
+      github:['https://github.com/SakibFakir69/connectToToyou_client',"https://github.com/SakibFakir69/ConnectToyou_server"],
+      img:img5,
       features: [
         "Short News Updates – Get the latest headlines in a bite-sized format",
-
-        " Category-Based News",
         "Social Interaction",
+        "Create News Posts – Share news updates easily."
       ],
+ 
+
     },
+
+    {
+      name:"Fitness",
+      title:"Fitness – Your Online Personal Training Hub",
+      description:"Fitness is a modern and easy-to-use web platform where users can find personal trainers, book sessions, and stay on top of their fitness goals — all in one place. Whether you're a user looking to stay in shape or a trainer managing your clients, this platform has something for everyone.",
+      
+      features: [
+        " Trainer Management – Users can find and manage trainers easily",
+        " Trainer Dashboard – Trainers can handle bookings, feedback, and schedules",
+        " Data Visualization – Insightful dashboards to track performance and growth"
+      ],
+      front_end: ["React,", " Tailwind CSS", "Framer-Motion","Javascript"],
+      backend: ["Express", "Node.Js", "MongoDB","Firebase"],
+
+      github:['https://github.com/SakibFakir69/Fitness','https://github.com/SakibFakir69/Fitness_Server'],
+      img:img4,
+
+    },
+
 
     {
       name:"Artifacts Tracker",
@@ -72,6 +98,10 @@ function Project() {
         "View and manage your artifacts",
         "Easy-to-use interface for organizing collections",
       ],
+      github:['https://github.com/SakibFakir69/-Artifacts-Tracker','https://github.com/SakibFakir69/artifacts-tracker-server-side']
+      
+
+
 
 
 
@@ -149,6 +179,30 @@ function Project() {
                   </p>
                 ))}
               </div>
+            </div>
+{/* github */}
+            <div className="flex gap-2">
+            <p className="font-semibold">Github</p>
+              {
+                
+                item.github?.map((link,key)=> (
+                 <div>
+                  
+                   <div>
+               
+                   
+                   <a 
+                   target="_blank"
+                   
+                   
+                   className="text-blue-400" href={link}> {key=="0" ? " Client" : "Server"} </a>
+                  
+          
+                   </div>
+                 </div>
+                ))
+              }
+
             </div>
           </div>
         ))}

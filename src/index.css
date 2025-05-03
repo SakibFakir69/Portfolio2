@@ -8,6 +8,10 @@
 .all-color {
   background: #1e1e1e;
 }
+.active{
+  background-color: rgba(33, 198, 36, 0.75);
+  
+}
 
 .box {
   height: 200px;
