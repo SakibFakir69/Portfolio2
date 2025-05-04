@@ -20,10 +20,11 @@ function Project() {
       description:
         "Next Call is a real-time chat and video calling web app where people can connect, talk, and see each other—instantly.",
       features: [
-        "Real-time Chat",
-        "Encryption & Decription",
+        "One-on-One and Group Video Calls: Reliable peer-to-peer HD communication",
+        "Screen Sharing Present documents, applications, or your entire screen during video calls seamlessly",
+        "Real-Time Chat Instantly message participants with chats that auto-save for future reference",
         "Chat history download",
-        "Meeting schedule",
+      
       ],
       front_end: ["React", " Tailwind CSS", "Framer-Motion"],
       backend: ["Express", "Node.Js", "MongoDB"],
@@ -39,9 +40,9 @@ function Project() {
       description:
         "A smart AI support system for bKash that chats naturally in Bangla and English, making customer service faster, easier, and more reliable",
       features: [
-        "24/7 Availability",
-        "Bilingual Support (Bangla & English)",
-        "Real-time, Fast Responses:",
+        "Get Support any time - any type of question bkash related ",
+        
+        "Real-time, Fast Responses",
       ],
       front_end: ["JavaScript", "React", "Tailwind CSS", "Lottie-react"],
       backend: ["Firebase", "ExpressJS", "MongoDB"],

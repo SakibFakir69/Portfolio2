@@ -13,13 +13,13 @@ function Skill() {
   const Skills = [
     {
       title: "Langauge",
-      skill: ["C++", "JavaScripts"],
+      skill: ["C++", "JavaScript","TypeScript"],
       icon: <GrCode className="text-green-400" />,
     },
 
     {
       title: "Frontend Development",
-      skill: ["Next.js", "React", "Tailwind ", "HTML", "CSS"],
+      skill: [ "React", "Tailwind ", "HTML", "CSS"],
       icon: <LiaLaptopCodeSolid className="text-yellow-300" />,
     },
     {

@@ -8,6 +8,9 @@ import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import animationData from '../../public/Animation - 1745166415330.json'
 import Lottie from "react-lottie";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+
+
 function HeroSection() {
 
 
@@ -110,18 +113,18 @@ function HeroSection() {
           {/* button */}
           <div className="flex gap-4 cursor-pointer md:mt-10 ">
 
-            <button className=" md:px-14 px-12 py-3  bg-violet-600 text-xl shadow-2xl shadow-black rounded hover:shadow-2xl hover:bg-stone-950 duration-300 delay-200 hover:shadow-violet-700">
+            <a target="_blank" href="https://drive.google.com/file/d/1NC_aFep8VKwKUDG9KQXMX_gCZhu8ImOj/view?usp=sharing" className=" md:px-14 px-12 py-3  bg-violet-600 text-xl shadow-2xl shadow-black rounded hover:shadow-2xl hover:bg-stone-950 duration-300 delay-200 hover:shadow-violet-700">
            Resume
 
 
            
-            </button>
+            </a>
 
 
            
       
             
-            <button className=" md:px-14 px-12 py-3 bg-stone-950 rounded text-xl  shadow-2xl hover:bg-violet-600 duration-300 delay-200 hover:shadow-2xl ">Contact</button>
+            <Link to={'/contacts'} className=" md:px-14 px-12 py-3 bg-stone-950 rounded text-xl  shadow-2xl hover:bg-violet-600 duration-300 delay-200 hover:shadow-2xl ">Contact</Link>
 
 
 
