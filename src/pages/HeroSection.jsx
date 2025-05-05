@@ -25,7 +25,7 @@ function HeroSection() {
 
 
   return (
-    <div className="text-white   relative overflow-hidden min-h-screen p-6">
+    <div className="text-white   relative overflow-hidden min-h-screen p-6 -mt-2">
       <Helmet>
         <title>Home</title>
       </Helmet>
