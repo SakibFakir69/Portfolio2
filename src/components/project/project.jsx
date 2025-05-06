@@ -26,7 +26,7 @@ function Project() {
         "Chat history download",
       
       ],
-      front_end: ["React", " Tailwind CSS", "Framer-Motion"],
+      front_end: ["React", " Tailwind CSS", "Framer-Motion"," webSocket( Socket.io )","WebRTC ( 100ms )"],
       backend: ["Express", "Node.Js", "MongoDB"],
       chat: ["Socket.io"],
       video: ["WebSocket", "100ms", "agora"],
@@ -154,11 +154,11 @@ function Project() {
 
             <div>
               <h2 className="font-semibold text-violet-400">Front-End</h2>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 {item.front_end.map((front, key) => (
                   <p
                     key={key}
-                    className="border p-1 rounded hover:bg-teal-400/20 border-teal-300/20"
+                    className="border p-1 rounded hover:bg-teal-400/20 border-teal-300/20 inline-block"
                   >
                     {front}
                   </p>
@@ -170,7 +170,7 @@ function Project() {
 
             <div>
               <h2 className="font-semibold text-red-400">Back-End</h2>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 {item.backend.map((backend, key) => (
                   <p
                     key={key}
