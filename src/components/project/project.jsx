@@ -112,9 +112,7 @@ function Project() {
   return (
     <div className="py-24 w-full">
 
-      <Helmet>
-        <title>Project</title>
-      </Helmet>
+  
       
       <section className="grid md:grid-cols-2 lg:grid-cols-2 gap-3 p-6">
         {projects.map((item, key) => (

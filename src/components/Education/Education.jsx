@@ -32,9 +32,7 @@ function Education() {
 
   return (
     <div className="py-20 w-full flex justify-center items-center">
-      <Helmet>
-        <title>Education</title>
-      </Helmet>
+    
       <section className=" md:w-4/5 p-4 mt-16 ">
         {educationList.map((education, key) => (
 
