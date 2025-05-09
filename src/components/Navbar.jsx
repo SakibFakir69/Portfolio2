@@ -56,6 +56,7 @@ function Navbar() {
 
         <div className="navbar-start  p-2">
           <div className="dropdown ">
+            
 
 
             <MdMenu tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
@@ -69,11 +70,14 @@ function Navbar() {
               {links}
             </ul>
           </div>
-          {/* <a className="btn  text-xl text-white">Sakib Fakir</a> */}
+          <img className="size-10 hidden lg:block" src="https://img.icons8.com/nolan/64/s.png" />
+
         </div>
 
         <div className="navbar-center hidden lg:flex">
+          
           <ul className="menu menu-horizontal px-1 text-white">
+          
             {links}
            
           </ul>

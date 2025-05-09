@@ -44,16 +44,8 @@ function HeroSection() {
 
 
             <motion.span
-             animate={{
-              color: ["#00ff00", "#0000ff", "#ffff00"],
-            }}
-            transition={{
-              duration: 5,
-              delay: 2,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
 
+           
             
             className="text-white">✨  Welcome to my universe</motion.span>
            
