@@ -83,7 +83,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a target="_blank" href={'https://drive.google.com/file/d/1NC_aFep8VKwKUDG9KQXMX_gCZhu8ImOj/view?usp=sharing'} className="btn border-none px-10 py-3 bg-violet-500 hover:shadow-blue-300 shadow-2xl hover:bg-violet-700">Resume</a>
+          <a target="_blank" href={'https://docs.google.com/document/d/1iEdPJVl3qNbb-ogutPsHqqxcm7rMhOEjoof3mreP-Lw/edit?usp=sharing'} className="btn border-none px-10 py-3 bg-violet-500 hover:shadow-blue-300 shadow-2xl hover:bg-violet-700">Resume</a>
         </div>
       </div>
     </div>

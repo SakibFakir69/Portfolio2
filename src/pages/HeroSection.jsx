@@ -105,7 +105,7 @@ function HeroSection() {
           {/* button */}
           <div className="flex gap-4 cursor-pointer md:mt-10 ">
 
-            <a target="_blank" href="https://drive.google.com/file/d/1NC_aFep8VKwKUDG9KQXMX_gCZhu8ImOj/view?usp=sharing" className=" md:px-14 px-12 py-3  bg-violet-600 text-xl shadow-2xl shadow-black rounded hover:shadow-2xl hover:bg-stone-950 duration-300 delay-200 hover:shadow-violet-700">
+            <a target="_blank" href="https://docs.google.com/document/d/1iEdPJVl3qNbb-ogutPsHqqxcm7rMhOEjoof3mreP-Lw/edit?usp=sharing" className=" md:px-14 px-12 py-3  bg-violet-600 text-xl shadow-2xl shadow-black rounded hover:shadow-2xl hover:bg-stone-950 duration-300 delay-200 hover:shadow-violet-700">
            Resume
 
 
